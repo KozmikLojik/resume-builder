@@ -21,7 +21,7 @@ export default function App() {
     setLoading(true);
     setResume("");
     try {
-      const response = await axios.post("http://localhost:3001/generate", {
+      const response = await axios.post("https://resume-builder-production-acd5.up.railway.app/generate", {
         messages: [
           {
             role: "user",
